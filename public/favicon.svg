@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#4A3028"/>
+  <!-- Saucer -->
+  <path d="M12 48C18 52 46 52 52 48" stroke="#F7F3EC" stroke-width="3" stroke-linecap="round"/>
+  <!-- Cup Body -->
+  <path d="M16 26H44C44 38 38 45 30 45C22 45 16 38 16 26Z" fill="#F7F3EC"/>
+  <!-- Cup Handle -->
+  <path d="M43 29C49 29 52 32 52 35C52 38 48 40 43 40" stroke="#F7F3EC" stroke-width="3" stroke-linecap="round"/>
+  <!-- Steam Lines in Terracotta -->
+  <path d="M25 21C24 18 26 15 25 12" stroke="#B86F52" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M31 20C30 17 32 14 31 11" stroke="#B86F52" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M37 21C36 18 38 15 37 12" stroke="#B86F52" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

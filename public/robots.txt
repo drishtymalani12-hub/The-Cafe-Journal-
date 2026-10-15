@@ -1,0 +1,8 @@
+# robots.txt for The Cafe Journal
+# Replace the sitemap URL with your actual Vercel production domain
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://the-cafe-journal.vercel.app/sitemap.xml

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found (404) | The Cafe Journal</title>
+  <meta name="description" content="Sorry, the coffee guide or page you are looking for does not exist. Explore our cafe stories, brew guides, and recommendations.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-lockup">
+        <svg class="brand-logo-icon" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#4A3028"/>
+          <path d="M12 48C18 52 46 52 52 48" stroke="#F7F3EC" stroke-width="3" stroke-linecap="round"/>
+          <path d="M16 26H44C44 38 38 45 30 45C22 45 16 38 16 26Z" fill="#F7F3EC"/>
+          <path d="M43 29C49 29 52 32 52 35C52 38 48 40 43 40" stroke="#F7F3EC" stroke-width="3" stroke-linecap="round"/>
+          <path d="M25 21C24 18 26 15 25 12" stroke="#B86F52" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M31 20C30 17 32 14 31 11" stroke="#B86F52" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-title">The Cafe Journal</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="blogs.html" class="nav-link">All Articles</a>
+        <a href="about.html" class="nav-link">About Us</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="blogs.html" class="btn-header-cta">Explore Guides</a>
+        <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Open navigation menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-nav-drawer" class="mobile-nav-drawer">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="blogs.html" class="mobile-nav-link">All Articles</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+    </ul>
+  </div>
+
+  <!-- 404 Main Content -->
+  <main class="container page-404-wrap">
+    <div class="page-404-code">404</div>
+    <h1>This Cup Is Empty</h1>
+    <p class="lead" style="max-width: 580px; margin: 1rem auto 2rem;">
+      We searched every corner of the cafe, but the page you are looking for has been moved, brewed away, or never poured.
+    </p>
+
+    <!-- Search Form -->
+    <div style="max-width: 480px; margin: 0 auto 2.5rem;">
+      <form action="blogs.html" method="GET">
+        <div class="search-input-wrapper">
+          <svg class="search-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="search" name="q" class="search-input" placeholder="Search guides, drinks, or cafes..." aria-label="Search articles">
+        </div>
+      </form>
+    </div>
+
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <a href="index.html" class="btn-header-cta" style="padding: 0.75rem 1.75rem;">Return to Homepage</a>
+      <a href="blogs.html" class="btn-secondary" style="padding: 0.75rem 1.75rem;">Browse All Articles</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand-title">The Cafe Journal</p>
+          <p class="footer-tagline">Discover Cafes. Sip Slowly. Live Fully.<br>An independent editorial guide to coffee culture, cafe dining, and mindful slow living.</p>
+        </div>
+        <div>
+          <p class="footer-heading">Quick Links</p>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="blogs.html" class="footer-link">All Articles</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Featured Categories</p>
+          <ul class="footer-links-list">
+            <li><a href="blogs.html?cat=coffee" class="footer-link">Coffee Drinks</a></li>
+            <li><a href="blogs.html?cat=food" class="footer-link">Cafe Food &amp; Desserts</a></li>
+            <li><a href="blogs.html?cat=guides" class="footer-link">Cafe Guides</a></li>
+            <li><a href="blogs.html?cat=lifestyle" class="footer-link">Cafe Lifestyle</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Coffee Letter</p>
+          <p style="font-size: 0.85rem; color: #D6CEBE; margin-bottom: 0.75rem;">Weekly cafe discoveries and coffee brewing wisdom delivered to your inbox.</p>
+          <form class="footer-newsletter-form">
+            <input type="email" class="footer-input" placeholder="Enter your email" required aria-label="Email address">
+            <button type="submit" class="footer-submit-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Cafe Journal. All rights reserved.</p>
+        <p>Crafted for coffee enthusiasts worldwide.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

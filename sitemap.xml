@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  NOTE FOR VERCEL DEPLOYMENT:
+  Replace 'https://the-cafe-journal.vercel.app' with your actual Vercel domain URL
+  (e.g., https://the-cafe-journal-yourname.vercel.app) across this sitemap and in
+  each page's <link rel="canonical"> tag prior to submitting to Google Search Console.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://the-cafe-journal.vercel.app/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Blog Listing -->
+  <url>
+    <loc>https://the-cafe-journal.vercel.app/blogs.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- About Us Page -->
+  <url>
+    <loc>https://the-cafe-journal.vercel.app/about.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Article 1: Types of Cafes -->
+  <url>
+    <loc>https://the-cafe-journal.vercel.app/blogs/types-of-cafes.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Article 2: Coffee Drinks for Beginners -->
+  <url>
+    <loc>https://the-cafe-journal.vercel.app/blogs/coffee-drinks-for-beginners.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Article 3: Popular Cafe Food -->
+  <url>
+    <loc>https://the-cafe-journal.vercel.app/blogs/popular-cafe-food.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Article 4: Cafe Desserts -->
+  <url>
+    <loc>https://the-cafe-journal.vercel.app/blogs/cafe-desserts.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Article 5: Cafe Date Ideas -->
+  <url>
+    <loc>https://the-cafe-journal.vercel.app/blogs/cafe-date-ideas.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Article 6: Cafes for Studying -->
+  <url>
+    <loc>https://the-cafe-journal.vercel.app/blogs/cafes-for-studying.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Article 7: Coffee Beans and Roasts -->
+  <url>
+    <loc>https://the-cafe-journal.vercel.app/blogs/coffee-beans-and-roasts.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Article 8: Cafe Photography Tips -->
+  <url>
+    <loc>https://the-cafe-journal.vercel.app/blogs/cafe-photography-tips.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Article 9: Cafe Etiquette -->
+  <url>
+    <loc>https://the-cafe-journal.vercel.app/blogs/cafe-etiquette.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Article 10: Choosing a Cafe -->
+  <url>
+    <loc>https://the-cafe-journal.vercel.app/blogs/choosing-a-cafe.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cafe Journal | Cafe Culture, Coffee Guides &amp; Lifestyle</title>
+  <meta name="description" content="Discover cafes, sip slowly, and live fully. An editorial cafe blog featuring guides on coffee drinks, cafe food, desserts, study spots, and slow lifestyle.">
+  <link rel="canonical" href="https://the-cafe-journal.vercel.app/">
+
+  <!-- OpenGraph Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Cafe Journal | Cafe Culture, Coffee Guides &amp; Lifestyle">
+  <meta property="og:description" content="An editorial cafe publication inspired by Sprudge and The Infatuation, exploring coffee drinks, cafe dining, and mindful slow living.">
+  <meta property="og:url" content="https://the-cafe-journal.vercel.app/">
+  <meta property="og:image" content="https://the-cafe-journal.vercel.app/images/cafe-interior.jpg">
+  <meta property="og:site_name" content="The Cafe Journal">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Cafe Journal | Cafe Culture, Coffee Guides &amp; Lifestyle">
+  <meta name="twitter:description" content="Discover cafes, sip slowly, and live fully. Curated stories on coffee culture, cafe dining, and slow lifestyle.">
+  <meta name="twitter:image" content="https://the-cafe-journal.vercel.app/images/cafe-interior.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema.org WebSite & Blog Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "The Cafe Journal",
+    "url": "https://the-cafe-journal.vercel.app/",
+    "description": "Discover cafes, sip slowly, and live fully. An editorial cafe publication celebrating coffee culture and slow living.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Cafe Journal",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://the-cafe-journal.vercel.app/favicon.svg"
+      }
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://the-cafe-journal.vercel.app/blogs.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Header / Navigation (3-Zone Strict Top Bar Contract) -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <!-- Zone 1: Wordmark Brand -->
+      <a href="index.html" class="brand-lockup">
+        <svg class="brand-logo-icon" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#4A3028"/>
+          <path d="M12 48C18 52 46 52 52 48" stroke="#F7F3EC" stroke-width="3" stroke-linecap="round"/>
+          <path d="M16 26H44C44 38 38 45 30 45C22 45 16 38 16 26Z" fill="#F7F3EC"/>
+          <path d="M43 29C49 29 52 32 52 35C52 38 48 40 43 40" stroke="#F7F3EC" stroke-width="3" stroke-linecap="round"/>
+          <path d="M25 21C24 18 26 15 25 12" stroke="#B86F52" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M31 20C30 17 32 14 31 11" stroke="#B86F52" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-title">The Cafe Journal</span>
+      </a>
+
+      <!-- Zone 2: Navigation Links -->
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="blogs.html" class="nav-link">All Articles</a>
+        <a href="about.html" class="nav-link">About Us</a>
+      </nav>
+
+      <!-- Zone 3: Primary Action & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="blogs.html" class="btn-header-cta">Explore Guides</a>
+        <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Open navigation menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-nav-drawer" class="mobile-nav-drawer">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="blogs.html" class="mobile-nav-link">All Articles</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <p class="hero-tagline-kicker">Discover Cafes. Sip Slowly. Live Fully.</p>
+            <h1 class="hero-title">Your Editorial Guide to Modern Cafe Culture</h1>
+            <p class="hero-desc">
+              From the nuances of single-origin beans and artisanal pastries to quiet corner tables and mindful slow living, explore stories crafted for coffee enthusiasts, students, and curious palates.
+            </p>
+
+            <!-- Working Hero Search Bar -->
+            <div class="hero-search-box">
+              <form id="home-search-form" action="blogs.html" method="GET">
+                <div class="search-input-wrapper">
+                  <svg class="search-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  <input 
+                    type="search" 
+                    id="home-search-input" 
+                    name="q" 
+                    class="search-input" 
+                    placeholder="Search coffee drinks, cafe food, study spots..." 
+                    aria-label="Search articles"
+                  >
+                </div>
+              </form>
+            </div>
+
+            <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+              <a href="blogs.html" class="btn-header-cta" style="padding: 0.75rem 1.5rem;">Browse All 10 Articles</a>
+              <span style="font-size: 0.85rem; color: var(--color-charcoal-muted);">or explore by category below</span>
+            </div>
+          </div>
+
+          <!-- Hero Image (Eagerly loaded, explicit width/height, WebP/JPEG optimized) -->
+          <div class="hero-image-frame">
+            <picture>
+              <source srcset="images/cafe-interior.webp" type="image/webp">
+              <img 
+                src="images/cafe-interior.jpg" 
+                alt="Warm, sunlit artisan European cafe interior with wooden tables and espresso bar" 
+                width="600" 
+                height="440" 
+                loading="eager"
+              >
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="container" style="padding-top: 4rem; padding-bottom: 2rem;">
+      <div class="section-header">
+        <div>
+          <p class="meta-category">Editorial Departures</p>
+          <h2 class="section-header-title">Browse by Category</h2>
+        </div>
+        <a href="blogs.html" class="section-link-all">View All 10 Articles &rarr;</a>
+      </div>
+
+      <div class="category-grid">
+        <!-- Category 1: Coffee Drinks -->
+        <a href="blogs.html?cat=coffee" class="category-card">
+          <div class="category-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+              <line x1="6" y1="1" x2="6" y2="4"></line>
+              <line x1="10" y1="1" x2="10" y2="4"></line>
+              <line x1="14" y1="1" x2="14" y2="4"></line>
+            </svg>
+          </div>
+          <h3 class="category-title">Coffee Drinks</h3>
+          <p class="category-count">Espresso Ratios &amp; Roasts</p>
+        </a>
+
+        <!-- Category 2: Cafe Food & Desserts -->
+        <a href="blogs.html?cat=food" class="category-card">
+          <div class="category-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2a5 5 0 0 0-5 5v14a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V7a5 5 0 0 0-5-5z"></path>
+              <path d="M7 8h10"></path>
+            </svg>
+          </div>
+          <h3 class="category-title">Cafe Food &amp; Desserts</h3>
+          <p class="category-count">Brunch Staples &amp; Pastries</p>
+        </a>
+
+        <!-- Category 3: Cafe Guides -->
+        <a href="blogs.html?cat=guides" class="category-card">
+          <div class="category-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+              <line x1="8" y1="2" x2="8" y2="18"></line>
+              <line x1="16" y1="6" x2="16" y2="22"></line>
+            </svg>
+          </div>
+          <h3 class="category-title">Cafe Guides</h3>
+          <p class="category-count">Study Spots &amp; Styles</p>
+        </a>
+
+        <!-- Category 4: Lifestyle & Culture -->
+        <a href="blogs.html?cat=lifestyle" class="category-card">
+          <div class="category-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </div>
+          <h3 class="category-title">Cafe Lifestyle</h3>
+          <p class="category-count">Dating, Etiquette &amp; Photos</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Featured Articles Section -->
+    <section class="container" style="padding-bottom: 4rem;">
+      <div class="section-header">
+        <div>
+          <p class="meta-category">Curated Highlights</p>
+          <h2 class="section-header-title">Featured Stories</h2>
+        </div>
+        <a href="blogs.html" class="section-link-all">View All Stories &rarr;</a>
+      </div>
+
+      <!-- Lead Featured Story -->
+      <article class="featured-lead-card" style="margin-bottom: 2.5rem;">
+        <div class="featured-lead-image">
+          <picture>
+            <source srcset="images/cafe-interior.webp" type="image/webp">
+            <img 
+              src="images/cafe-interior.jpg" 
+              alt="Warm artisanal European cafe interior with patrons reading and enjoying coffee" 
+              width="600" 
+              height="400" 
+              loading="lazy"
+            >
+          </picture>
+        </div>
+        <div class="featured-lead-body">
+          <div class="meta-unboxed">
+            <span class="meta-category">Cafe Guides</span>
+            <span class="meta-sep">·</span>
+            <span>7 Min Read</span>
+            <span class="meta-sep">·</span>
+            <span>By Elena Rostova</span>
+          </div>
+          <h3 class="featured-lead-title">
+            <a href="blogs/types-of-cafes.html">A Guide to Different Types of Cafes</a>
+          </h3>
+          <p class="card-excerpt">
+            From third-wave Scandinavian roasters and historic Viennese salons to tranquil Japanese kissaten, explore the distinctive personalities, brew philosophies, and cultural histories behind modern coffee houses.
+          </p>
+          <div>
+            <a href="blogs/types-of-cafes.html" class="btn-header-cta" aria-label="Read full guide to different types of cafes">Read Types of Cafes Guide &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2 Side-by-Side Featured Cards -->
+      <div class="card-grid" style="grid-template-columns: repeat(2, 1fr);">
+        <article class="article-card">
+          <div class="card-image-wrap">
+            <picture>
+              <source srcset="images/latte-art.webp" type="image/webp">
+              <img src="images/latte-art.jpg" alt="Artisan cafe latte with rosetta art on rustic wood table" width="400" height="300" loading="lazy">
+            </picture>
+          </div>
+          <div class="card-body">
+            <div class="meta-unboxed">
+              <span class="meta-category">Coffee Drinks</span>
+              <span class="meta-sep">·</span>
+              <span>6 Min Read</span>
+              <span class="meta-sep">·</span>
+              <span>Oct 11, 2026</span>
+            </div>
+            <h3 class="card-title"><a href="blogs/coffee-drinks-for-beginners.html">A Beginner's Guide to Coffee Drinks</a></h3>
+            <p class="card-excerpt">Demystify the chalkboard menu. Learn the exact espresso-to-milk ratios and textures of flat whites, lattes, and cortados.</p>
+            <div class="card-footer">
+              <a href="blogs/coffee-drinks-for-beginners.html" class="read-more-link" aria-label="Read beginner's guide to coffee drinks">Read Coffee Drinks Guide &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="card-image-wrap">
+            <picture>
+              <source srcset="images/cafe-food.webp" type="image/webp">
+              <img src="images/cafe-food.jpg" alt="Avocado toast on crusty sourdough with croissant and berries" width="400" height="300" loading="lazy">
+            </picture>
+          </div>
+          <div class="card-body">
+            <div class="meta-unboxed">
+              <span class="meta-category">Cafe Food</span>
+              <span class="meta-sep">·</span>
+              <span>7 Min Read</span>
+              <span class="meta-sep">·</span>
+              <span>Oct 12, 2026</span>
+            </div>
+            <h3 class="card-title"><a href="blogs/popular-cafe-food.html">Popular Foods to Try at a Cafe</a></h3>
+            <p class="card-excerpt">Elevate your breakfast and lunch with wild-fermented sourdough avocado toasts, baked skillet shakshuka, and gourmet melts.</p>
+            <div class="card-footer">
+              <a href="blogs/popular-cafe-food.html" class="read-more-link" aria-label="Read guide to popular foods to try at a cafe">Read Cafe Food Guide &rarr;</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Latest Articles Grid (6 more articles) -->
+    <section class="container" style="padding-bottom: 4.5rem;">
+      <div class="section-header">
+        <div>
+          <p class="meta-category">Recent Dispatches</p>
+          <h2 class="section-header-title">Latest Articles</h2>
+        </div>
+        <a href="blogs.html" class="section-link-all">Explore All 10 Stories &rarr;</a>
+      </div>
+
+      <div class="card-grid">
+        <!-- Latest 1: Desserts -->
+        <article class="article-card">
+          <div class="card-image-wrap">
+            <picture>
+              <source srcset="images/cafe-desserts.webp" type="image/webp">
+              <img src="images/cafe-desserts.jpg" alt="Basque cheesecake and fruit tart with espresso" width="400" height="300" loading="lazy">
+            </picture>
+          </div>
+          <div class="card-body">
+            <div class="meta-unboxed">
+              <span class="meta-category">Cafe Food</span>
+              <span class="meta-sep">·</span>
+              <span>7 Min Read</span>
+            </div>
+            <h3 class="card-title"><a href="blogs/cafe-desserts.html">The Ultimate Guide to Cafe Desserts</a></h3>
+            <p class="card-excerpt">Master the delicate art of pairing scorched Basque cheesecake, tiramisu, and tarts with coffee roasts.</p>
+            <div class="card-footer">
+              <a href="blogs/cafe-desserts.html" class="read-more-link" aria-label="Read ultimate guide to cafe desserts">Read Desserts Guide &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Latest 2: Date Ideas -->
+        <article class="article-card">
+          <div class="card-image-wrap">
+            <picture>
+              <source srcset="images/cafe-date.webp" type="image/webp">
+              <img src="images/cafe-date.jpg" alt="Couple chatting happily over coffee on a date" width="400" height="300" loading="lazy">
+            </picture>
+          </div>
+          <div class="card-body">
+            <div class="meta-unboxed">
+              <span class="meta-category">Lifestyle</span>
+              <span class="meta-sep">·</span>
+              <span>6 Min Read</span>
+            </div>
+            <h3 class="card-title"><a href="blogs/cafe-date-ideas.html">How to Choose the Perfect Cafe for a Date</a></h3>
+            <p class="card-excerpt">Discover why coffee dates excel, and how to spot cozy corner nooks, amber lighting, and romantic ambience.</p>
+            <div class="card-footer">
+              <a href="blogs/cafe-date-ideas.html" class="read-more-link" aria-label="Read guide on how to choose the perfect cafe for a date">Read Date Ideas Guide &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Latest 3: Study Spots -->
+        <article class="article-card">
+          <div class="card-image-wrap">
+            <picture>
+              <source srcset="images/study-cafe.webp" type="image/webp">
+              <img src="images/study-cafe.jpg" alt="Study nook with laptop and warm mug on rainy day" width="400" height="300" loading="lazy">
+            </picture>
+          </div>
+          <div class="card-body">
+            <div class="meta-unboxed">
+              <span class="meta-category">Cafe Guides</span>
+              <span class="meta-sep">·</span>
+              <span>7 Min Read</span>
+            </div>
+            <h3 class="card-title"><a href="blogs/cafes-for-studying.html">How to Choose a Cafe for Studying</a></h3>
+            <p class="card-excerpt">Find your productivity sanctuary: assessing Wi-Fi speeds, power outlets, ergonomic tables, and etiquette.</p>
+            <div class="card-footer">
+              <a href="blogs/cafes-for-studying.html" class="read-more-link" aria-label="Read guide on how to choose a cafe for studying">Read Study Cafes Guide &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Latest 4: Coffee Beans & Roasts -->
+        <article class="article-card">
+          <div class="card-image-wrap">
+            <picture>
+              <source srcset="images/coffee-beans.webp" type="image/webp">
+              <img src="images/coffee-beans.jpg" alt="Roasted coffee beans spilled on linen" width="400" height="300" loading="lazy">
+            </picture>
+          </div>
+          <div class="card-body">
+            <div class="meta-unboxed">
+              <span class="meta-category">Coffee Drinks</span>
+              <span class="meta-sep">·</span>
+              <span>8 Min Read</span>
+            </div>
+            <h3 class="card-title"><a href="blogs/coffee-beans-and-roasts.html">Understanding Coffee Beans and Roasts</a></h3>
+            <p class="card-excerpt">Learn Arabica vs Robusta botany, processing methods, and how roasting levels define aroma and flavor.</p>
+            <div class="card-footer">
+              <a href="blogs/coffee-beans-and-roasts.html" class="read-more-link" aria-label="Read guide to coffee beans and roasts">Read Beans &amp; Roasts Guide &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Latest 5: Photography Tips -->
+        <article class="article-card">
+          <div class="card-image-wrap">
+            <picture>
+              <source srcset="images/cafe-photography.webp" type="image/webp">
+              <img src="images/cafe-photography.jpg" alt="Vintage camera and notebook flatlay" width="400" height="300" loading="lazy">
+            </picture>
+          </div>
+          <div class="card-body">
+            <div class="meta-unboxed">
+              <span class="meta-category">Lifestyle</span>
+              <span class="meta-sep">·</span>
+              <span>6 Min Read</span>
+            </div>
+            <h3 class="card-title"><a href="blogs/cafe-photography-tips.html">Cafe Photography Tips for Beginners</a></h3>
+            <p class="card-excerpt">Capture stunning coffee scenes using natural 45-degree side window lighting and thoughtful flatlay props.</p>
+            <div class="card-footer">
+              <a href="blogs/cafe-photography-tips.html" class="read-more-link" aria-label="Read cafe photography tips for beginners">Read Photography Tips &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Latest 6: Cafe Etiquette -->
+        <article class="article-card">
+          <div class="card-image-wrap">
+            <picture>
+              <source srcset="images/cafe-barista.webp" type="image/webp">
+              <img src="images/cafe-barista.jpg" alt="Barista pouring coffee carefully" width="400" height="300" loading="lazy">
+            </picture>
+          </div>
+          <div class="card-body">
+            <div class="meta-unboxed">
+              <span class="meta-category">Lifestyle</span>
+              <span class="meta-sep">·</span>
+              <span>5 Min Read</span>
+            </div>
+            <h3 class="card-title"><a href="blogs/cafe-etiquette.html">Cafe Etiquette: Rules Every Visitor Should Know</a></h3>
+            <p class="card-excerpt">Master the unspoken social pact of third spaces: tipping, table duration, audio hygiene, and clearing dishes.</p>
+            <div class="card-footer">
+              <a href="blogs/cafe-etiquette.html" class="read-more-link" aria-label="Read cafe etiquette rules every visitor should know">Read Etiquette Guide &rarr;</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- About Section Teaser on Homepage -->
+    <section style="background-color: var(--color-cream-light); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); padding: 4.5rem 0;">
+      <div class="container" style="max-width: 860px; text-align: center;">
+        <p class="meta-category" style="margin-bottom: 0.5rem;">Behind The Cafe Journal</p>
+        <h2 style="margin-top: 0;">An Editorial Guide for Discerning Coffee Lovers</h2>
+        <p class="lead" style="margin: 1.25rem auto 2rem;">
+          Taking inspiration from the editorial organization of <em>Sprudge</em> and <em>Perfect Daily Grind</em> and the neighborhood discovery approach of <em>The Infatuation</em>, we review coffee beans, cafe dishes, and third spaces with curiosity and warmth.
+        </p>
+        <a href="about.html" class="btn-secondary" style="padding: 0.85rem 1.75rem;">Read Our Full Story &amp; Editorial Ethics &rarr;</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand-title">The Cafe Journal</p>
+          <p class="footer-tagline">Discover Cafes. Sip Slowly. Live Fully.<br>An independent editorial guide to coffee culture, cafe dining, and mindful slow living.</p>
+        </div>
+        <div>
+          <p class="footer-heading">Quick Links</p>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="blogs.html" class="footer-link">All Articles</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Featured Categories</p>
+          <ul class="footer-links-list">
+            <li><a href="blogs.html?cat=coffee" class="footer-link">Coffee Drinks</a></li>
+            <li><a href="blogs.html?cat=food" class="footer-link">Cafe Food &amp; Desserts</a></li>
+            <li><a href="blogs.html?cat=guides" class="footer-link">Cafe Guides</a></li>
+            <li><a href="blogs.html?cat=lifestyle" class="footer-link">Cafe Lifestyle</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Coffee Letter</p>
+          <p style="font-size: 0.85rem; color: #D6CEBE; margin-bottom: 0.75rem;">Weekly cafe discoveries and coffee brewing wisdom delivered to your inbox.</p>
+          <form class="footer-newsletter-form">
+            <input type="email" class="footer-input" placeholder="Enter your email" required aria-label="Email address">
+            <button type="submit" class="footer-submit-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Cafe Journal. All rights reserved.</p>
+        <p>Crafted for coffee enthusiasts worldwide.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

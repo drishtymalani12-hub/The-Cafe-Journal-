@@ -1,0 +1,6 @@
+{
+  "name": "The Cafe Journal",
+  "description": "Discover cafes, sip slowly, and live fully. An editorial cafe blog featuring guides on coffee drinks, cafe food, desserts, study spots, and cafe culture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
